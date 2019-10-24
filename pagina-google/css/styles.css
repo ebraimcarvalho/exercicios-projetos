@@ -5,7 +5,9 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  width: 99vw;
+  font-size: 14px;
+  width: 98vw;
+  margin-bottom: 0;
 }
 
 ul {
@@ -18,7 +20,6 @@ li {
 
 a {
   text-decoration: none;
-  color: gray;
 }
 
 a:hover {
@@ -36,11 +37,21 @@ header {
 
 header ul {
   float: right;
+  margin-top: 20px;
+  color: #000;
+}
+
+header ul li {
+  margin-right: 6px;
+}
+
+header ul a {
+  color: #000;
 }
 
 .container {
   display: block;
-  height: 80vh;
+  height: 79vh;
   max-width: 500px;
   padding: 0;
   margin: auto;
@@ -71,7 +82,7 @@ input {
 
 button {
   width: 150px;
-  opacity: 0.6;
+  opacity: 0.8;
   cursor: pointer;
 }
 
@@ -83,22 +94,24 @@ button.first {
 .under {
   position: relative;
   background: #dadada;
-  width: 100%;
+  width: 98vw;
   height: 5vh;
-  padding-top: 5px;
-  padding-left: 10px;
-  opacity: 0.6;
+  padding-top: 10px;
+  padding-left: 25px;
+  opacity: 0.8;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 footer {
   position: relative;
   background: #dadada;
   color: #000;
-  width: 100%;
+  width: 98vw;
   height: 5vh;
-  padding-top: 5px;
-  padding-left: 10px;
-  opacity: 0.6;
+  padding-top: 10px;
+  padding-left: 25px;
+  opacity: 0.8;
 }
 
 footer ul.left {
@@ -107,4 +120,13 @@ footer ul.left {
 
 footer ul.right {
   float: right;
+  padding-right: 30px;
+}
+
+footer ul a {
+  color: #000;
+}
+
+footer ul li {
+  margin-right: 15px;
 }
