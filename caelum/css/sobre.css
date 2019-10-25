@@ -5,7 +5,49 @@ body {
   width: 100%;
 }
 
-h1 {
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+header {
+  position: relative;
+}
+
+.sacola {
+  background-image: url(../img/sacola.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  font-size: 14px;
+  text-align: right;
+  width: 140px;
+  padding-right: 35px;
+  padding-top: 8px;  
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.menu-opcoes {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.menu-opcoes ul {
+  font-size: 15px;
+}
+
+.menu-opcoes a {
+  color: #003366;
+}
+
+.menu-opcoes ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.h1-sobre {
   background-image: url(../img/sobre-background.jpg);
   padding: 10px;
 }
@@ -19,6 +61,18 @@ p {
   padding: 0 45px;
   text-indent: 15px;
   text-align: justify;
+}
+
+p::first-letter {
+  font-weight: bold;
+}
+
+h1 + p {
+  text-indent: 0;
+}
+
+:not(p) + p::first-line {
+  font-variant: small-caps;
 }
 
 figure {
@@ -45,14 +99,52 @@ figcaption {
   margin: 0 0 10px 10px;
 }
 
-footer {
-  color: #777;
-  margin: 30px 0;
-  padding: 30px 0;
+h2 + ul li:nth-child(2n) {
+  color: green;
 }
 
-footer img {
-  margin-right: 30px;
-  vertical-align: middle;
-  width: 94px;
+h2 + ul li:nth-child(2n+1) {
+  color: blue;
+}
+
+/*-------Footer---------*/
+footer {
+  background: url(../img/fundo-rodape.png);
+  clear: both;
+  padding: 20px;
+}
+
+footer .container {
+  position: relative;
+}
+
+.social {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  list-style: none;
+}
+
+.social li {
+  float: left;
+  margin-left: 25px;
+}
+
+.social a {
+  width: 32px;
+  height: 32px;
+  display: block;
+  text-indent: -9999px;
+}
+
+.social a[href*="facebook.com"] {
+  background-image: url(../img/facebook.png);
+}
+
+.social a[href*="twitter.com"] {
+  background-image: url(../img/twitter.png);
+}
+
+.social a[href*="plus.google.com"] {
+  background-image: url(../img/googleplus.png);
 }
