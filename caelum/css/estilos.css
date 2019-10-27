@@ -157,7 +157,7 @@ header {
 .painel li {
   display: inline-block;
   vertical-align: top;
-  width: 140px;
+  width: 31%;
   margin: 2px;
   padding-bottom: 10px;
   transition: 0.7s ease-out;
@@ -167,9 +167,6 @@ header {
   background-color: rgba(255,255,255,0.8);
   box-shadow: 0 0 5px #333;
   transition: 0.7s ease-in;
-  transform: scale(1.2);
-}
-.painel li:nth-child(2n):hover {
   transform: scale(1.2);
 }
 
@@ -191,6 +188,11 @@ header {
   font-size: 14px;
   text-align: center;
   text-decoration: none;
+}
+
+.painel figcaption {
+  margin: 0 auto;
+  width: 77%;
 }
 /*-------Fim Main----------*/
 /*-------Footer---------*/
@@ -274,15 +276,21 @@ footer .container {
   }
 
   .painel {
-    width: 100%;
+    padding: 5px 0;
   }
 
-  painel li {
-    width: 30%;
+  .painel nav ol {
+    margin: 0px 5px;
   }
  
   .painel img {
     width: 100%;
+  }
+
+  .novidades,
+  .mais-vendidos {
+    width: 100%;
+    position: static;
   }
 
 }
