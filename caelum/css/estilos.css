@@ -35,7 +35,8 @@ header {
 }
 
 .menu-opcoes ul {
-  font-size: 15px;
+  font-size: 15px;  
+  padding-left: 10px;
 }
 
 .menu-opcoes a {
@@ -67,9 +68,18 @@ header {
   background-color: #dcdcdc;
   font-weight: bold;
   text-transform: uppercase;
-  margin-right: 20px;
+  margin-right: 1%;
   width: 230px;
   float: left;
+  width: 30%;
+}
+
+.menu-departamentos nav > ul {
+  column-count: 1;
+}
+
+.banner-destaque img {
+  width: 69%;
 }
 
 .busca {
@@ -81,7 +91,7 @@ header {
   clear: left;
   margin-top: 10px;
   padding-bottom: 10px;
-  height: 392px;
+  max-height: 350px;
 }
 
 .busca h2,
@@ -136,8 +146,8 @@ header {
 /*-------Início Painel---------*/
 .painel {
   margin: 10px 0;
-  padding: 10px;
-  width: 47%;
+  padding: 5px;
+  width: 48%;
   border-radius: 4px;
   box-shadow: inset 1px 1px 4px #999;
 }
@@ -149,7 +159,7 @@ header {
 }
 
 .mais-vendidos {
-  float: right;  
+  float: right;
   background-color: #dcdcf5;
   background: linear-gradient(#dcdcf5, #f4bebe);
 }
@@ -237,7 +247,7 @@ footer .container {
   background-image: url(../img/googleplus.png);
 }
 /*---------Media Queries------------*/
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
   .container {
     width: 100%;
   }
@@ -261,7 +271,7 @@ footer .container {
 
   .menu-opcoes ul li {
     display: inline-block;
-    margin: 5px;
+    margin: 5px 3px;
   }
 
   .busca,
@@ -293,4 +303,27 @@ footer .container {
     position: static;
   }
 
+  @media (min-width: 720px) {
+    header h1 {
+      text-align: left;
+    }
+ 
+    .menu-opcoes {
+      position: absolute;
+    }
+ 
+    .sacola {
+      display: block;
+    }
+ 
+    .busca,
+    .menu-departamentos {
+      margin-right: 1%;
+      width: 30%;
+    }
+ 
+    .banner-destaque img {
+      width: 69%;
+    }
+  }
 }
