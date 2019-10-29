@@ -95,6 +95,74 @@
   cursor: pointer;
 }
 
+.tamanhos output {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  line-height: 44px;
+  text-align: center;
+  border: 3px solid #666;
+  border-radius: 50%;
+  color: #555;
+}
+
+.detalhes {
+  padding: 2em 0;
+}
+
+.detalhes h2 {
+  font-size: 1.5em;
+  line-height: 2;
+}
+
+.detalhes p {
+  margin: 1em 0;
+  font-size: 1em;
+}
+
+.detalhes table {
+  border-spacing: 0.2em;
+  border-collapse: separate;
+}
+
+.detalhes thead {
+  background-color: #999;
+}
+
+.detalhes thead th {
+  font-weight: bold;
+  padding: 0.3em 1em;
+  text-align: center;
+}
+
+.detalhes td {
+  padding: 0.3em;
+}
+
+.detalhes tr:nth-child(2n) {
+  background-color: #ccc;
+}
+
+.detalhes td:first-child {
+  font-style: italic;
+}
+
+.produto-back {
+  background-color: #f2f2f2;
+  margin-top: 1em;
+  border-top: 2px solid #ccc;
+}
+
+.cores label img {
+  border: 2px solid #ccc;
+}
+
+@media (min-width: 520px) {
+  .detalhes {
+    font-size: 1.2em;
+  }
+}
+
 @media (min-width: 630px) {
   .produto {
     position: relative;
@@ -124,4 +192,12 @@
     float: left;
     margin-right: 10px;
   }
+
+  .produto fieldset {
+    display: inline-block;
+    vertical-align: top;
+    margin: 1em 0;
+    min-width: 240px;
+    width: 45%;
+}
 }

@@ -25,30 +25,74 @@
     </nav>
   </header>
 
-  <div class="container">
-    <section class="produto">
-      <h2>Conjunto Sky</h2>
-      <p>por apenas R$99,90</p>
+  <div class="produto-back">
+    <div class="container">
+      <section class="produto">
+        <h2>Conjunto Sky</h2>
+        <p>por apenas R$99,90</p>
 
-      <form action="checkout.html" method="POST">
-        <fieldset class="cores">
-          <legend>Escolha a cor:</legend>
-          <input type="radio" name="cor" id="verde" value="verde" checked>
-          <label for="verde">
-            <img src="./img/produtos/foto15-verde.png" alt="Produto na cor verde">
-          </label>
-          <input type="radio" name="cor" id="rosa" value="rosa">
-          <label for="rosa">
-            <img src="./img/produtos/foto15-rosa.png" alt="Produto na cor rosa">
-          </label>
-          <input type="radio" name="cor" id="azul" value="azul">
-          <label for="azul">
-            <img src="./img/produtos/foto15-azul.png" alt="Produto na cor azul">
-          </label>
-        </fieldset>
-        <button class="comprar">Comprar</button>
-      </form>
-    </section>
+        <form action="checkout.html" method="POST">
+          <fieldset class="cores">
+            <legend>Escolha a cor:</legend>
+            <input type="radio" name="cor" id="verde" value="verde" checked>
+            <label for="verde">
+              <img src="./img/produtos/foto15-verde.png" alt="Produto na cor verde">
+            </label>
+            <input type="radio" name="cor" id="rosa" value="rosa">
+            <label for="rosa">
+              <img src="./img/produtos/foto15-rosa.png" alt="Produto na cor rosa">
+            </label>
+            <input type="radio" name="cor" id="azul" value="azul">
+            <label for="azul">
+              <img src="./img/produtos/foto15-azul.png" alt="Produto na cor azul">
+            </label>
+          </fieldset>
+
+          <fieldset class="tamanhos">
+              <legend>Escolha o tamanho:</legend>
+        
+              <input type="range" min="36" max="46" value="42" step="2" name="tamanho" id="tamanho">
+              <output for="tamanho" name="valortamanho">42</output>
+          </fieldset>
+          
+          <button class="comprar">Comprar</button>
+        </form>
+      </section>
+
+      <section class="detalhes">
+        <h2>Detalhes do produto</h2>
+
+        <p>Conjunto confortável, ideal para eventos casuais!</p>
+        <p>Alças delicadas, ótimo caimento e despojado. Possui tecido em algodão, lisa nas costas e na frente.</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Característica</th>
+              <th>Detalhe</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Modelo</td>
+              <td>Conjunto Sky</td>
+            </tr>
+            <tr>
+              <td>Material</td>
+              <td>Algodão</td>
+            </tr>
+            <tr>
+              <td>Cores</td>
+              <td>Verde, Rosa e Azul</td>
+            </tr>
+            <tr>
+              <td>Lavagem</td>
+              <td>Lavar a mão</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
   </div>
 
   <footer>
