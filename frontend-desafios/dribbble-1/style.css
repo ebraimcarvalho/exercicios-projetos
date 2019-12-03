@@ -12,7 +12,7 @@ body {
 
 .container {
   margin: 0 auto;
-
+  background-color: #eee;
 }
 
 .page-1 {
@@ -20,13 +20,15 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   height: 100vh;
-  color: white;
+  color: #fff;
   padding: auto 0;
 }
 
 .page-1-main {
+  position: relative;
   padding-top: 65%;
   padding-left: 12%;
+  padding-bottom: 20%;
 }
 
 .large-size {
@@ -38,16 +40,93 @@ body {
 }
 
 .page-1 button {
-  padding: 5px 10px;
+  padding: 8px 12px;
+  font-weight: 700;
   border: none;
-  background-color: #dadada;
+  background-color: #ddd;
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  bottom: 0px;
+  padding: 0.5rem 0;
+  background-color: #eee;
   color: #000;
+  font-weight: bold;
+  font-size: 0.9rem;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.page-2 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.page-2 p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.text-main::first-letter {
+  font-size: 5rem;
+  float: left;
+  line-height: 1;
+  margin-top: -0.2rem;
+  margin-right: 0.5rem;
+  margin-bottom: -0.2rem;
+}
+
+.page-3 {
+  padding-bottom: 4rem;
+}
+
+.page-3 .header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: end;
+  font-size: 0.9rem;
+  width: 100%;
+  padding: 2.5rem 1rem 2.5rem 4rem;
+  background-color: #eee;
+  color: #000;
+  font-weight: bold;
+}
+
+.page-3 .main {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  row-gap: 2rem;
+  color: #333;
+}
+
+.page-3 .main .foto img {
+  background-color: #ddd;
+  border-radius: 100%;
+  height: 50px;
+  object-fit: cover;
+  width: 50px; 
+}
+
+.info-comment {
+  font-size: 0.8rem;
+  padding-bottom: 0.5rem;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.line-height {
+  line-height: 1.2;
+}
+
+.divisor-center {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
