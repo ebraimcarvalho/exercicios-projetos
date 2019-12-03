@@ -1,3 +1,4 @@
+/*MOBILE FIRST*/
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: helvetica;
+  font-family: helvetica;  
+  background-color: #eee;
 }
 
 .container {
@@ -26,17 +28,16 @@ body {
 
 .page-1-main {
   position: relative;
-  padding-top: 65%;
+  top: 36%;
   padding-left: 12%;
-  padding-bottom: 20%;
 }
 
 .large-size {
   font-size: 2rem;
   font-weight: bold;
-  max-width: 12rem;
+  margin: 0 auto;
   padding-top: 5%;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
 }
 
 .page-1 button {
@@ -63,6 +64,7 @@ body {
 .page-2 {
   width: 80%;
   margin: 0 auto;
+  padding-top: 2rem;
 }
 
 .page-2 p {
@@ -90,7 +92,7 @@ body {
   justify-items: end;
   font-size: 0.9rem;
   width: 100%;
-  padding: 2.5rem 1rem 2.5rem 4rem;
+  padding: 2rem 1rem 2rem 1rem;
   background-color: #eee;
   color: #000;
   font-weight: bold;
@@ -129,4 +131,61 @@ body {
 .divisor-center {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
+}
+
+/*LARGE SIZES*/
+@media (min-width: 400px) {
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .page-1 {
+    background-position: center;
+  }
+
+  .page-1-main {
+    position: relative;
+    top: 38%;
+    padding-left: 28%;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .page-1 {
+    background-position: center;
+  }
+
+  .page-1-main {
+    position: relative;
+    top: 38%;
+    padding-left: 34%;
+  }
+
+  .footer {
+    width: 70%;
+  }
+
+  .page-2, .page-3 {
+    padding-top: 5%;
+  }
+
+  .page-3 .header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 8%;
+  }
+
+  .page-3 .main {
+    width: 80%;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+  }
 }
