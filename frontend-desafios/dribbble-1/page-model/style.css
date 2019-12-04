@@ -1,0 +1,191 @@
+body {
+  background-color:#dbe2ec;  
+}
+
+/*fonts*/
+.main_font {
+  font-family:'Libre Baskerville';
+  font-weight:400;
+  font-size:16px;
+  line-height:2em;
+  color:#666;	
+}
+
+.autor {
+  font-family:'Josefin Sans';
+  font-weight:700;
+  font-size:14px;
+}
+
+.nomad {  
+  font-family:'Josefin Sans';
+  font-weight:700;
+  font-size:40px;
+  line-height:50px;
+}
+
+.buttons {
+  font-family:'Josefin Sans';
+  font-weight:700;
+  font-size:16px;	
+}
+
+.comment_text {
+  font-family:'Libre Baskerville';
+  font-weight:400;
+  font-size:12px;
+  line-height:2em;
+  color:#666;
+}
+
+.comment_owner {
+  font-family:'Libre Baskerville';
+  font-weight:700;
+  font-size:13px;	
+}
+
+/*pages*/
+
+.container {
+  width:1231px; 
+  margin:0 auto;
+}
+
+.page {
+  width:377px;
+  height:672px;
+  background-color:#fff;
+  float:left;
+  margin:40px 50px 0 0;
+  box-shadow:0 0 10px 5px #cfd6df;
+}
+
+.page_cont {
+  height:622px; 
+  position:relative; 
+}
+
+.one {
+  background-image:url(http://content.screencast.com/users/natein/folders/Backgrounds/media/102b8b02-ce47-4ce6-8f09-e303c30c0e4c/back.jpg);
+}
+
+.two {
+	background-color:#f8f9fa;
+}
+
+.page:last-child {
+  margin-right:0;
+}
+
+/*Elements*/
+
+.author_pos {
+	position:absolute;
+	top:240px;
+	left:30px;
+	color:#fff;
+}
+
+.nomad_pos {
+	position:absolute;
+	top:250px;
+	left:30px;
+	color:#fff;
+}
+
+.travel {
+	background-color:#fff;
+	top:555px;
+	left:30px;
+	position:absolute;
+	text-align:center;
+}
+
+.travel_styles {
+  padding-top: 12px;
+  padding-bottom: 8px;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin: 0;
+  text-align: center;
+}
+
+.close_styles {
+  float:left;
+  margin-top: 20px;
+	margin-left:30px;
+}
+
+
+.dots {
+  width:60px;
+  margin:0 auto;
+  margin-top:24px;
+}
+
+.dot {
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  background-color:#ccc;
+  float:left;
+  margin-right:10px;
+}
+
+.dot::last-child {
+  margin-right:0;
+}
+
+.fill {
+  background-color:#000;
+}
+
+.comment_icon {
+	float:right;
+	margin-right:30px;
+	margin-top:-10px;
+}
+
+.first::first-letter  {
+  color: #000;
+  font-size:80px; 
+  float:left;
+  margin: 30px 20px 20px 0px;
+}
+
+.article_text {
+	width:317px;
+	position:absolute;
+	top:20px;
+	left:30px;
+}
+
+.comments_header {
+	text-align:center;
+	margin-top:30px;
+	
+}
+
+.comment {
+	margin:30px;
+	clear:both;
+}	
+	
+.avatar {
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	margin-right:20px;
+	float:left;
+}
+
+.comment_time {
+	color:#bbb;
+}
+
+.comment_texts {
+	float:right;
+	width:240px;
+	margin-top:-15px;
+	margin-bottom:20px;
+}
