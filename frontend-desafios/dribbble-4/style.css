@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+  background-color: rgba(238, 238, 238, 0.685);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 30vw;
+  background-color: #fff;
+  padding: 4rem 2rem 2rem 2rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+}
+
+.center-info {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-place {
+  width: 120px;
+  height: 120px;
+  border: 6px solid rgba(0, 0, 0, 0.751);
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-place img {
+  position: absolute;
+  bottom: -40px;
+  left: -30px;
+}
+
+.h1-place h1 {
+  font-size: 1.2rem;
+  padding-top: 2rem;
+  color: #555;
+}
+
+.table-for {
+  padding: 3rem 4rem 2rem 4rem;
+}
+
+.table-for p {
+  text-align: center;
+  color: #555;
+}
+
+.controllers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  color: #555;
+}
+
+.number-center {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.date-time {
+  text-align: center;
+  color: #555;
+}
+
+.date-time p:last-of-type {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 900;
+  padding-top: 0.5rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.confirm {
+  background-color: #555;
+  color: #ddd;
+  font-weight: 700;
+  padding: 1.3rem 6rem;
+  border: none;
+  box-shadow: 0px 25px 20px -21px rgba(0,0,0,0.65);
+}
