@@ -22,11 +22,19 @@ a {
   fill: rgb(0, 0, 0);
 }
 
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #b4d0e7;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem;
+  padding: 20px;
 }
 
 .logo {
@@ -48,4 +56,73 @@ a {
   font-size: 0.9rem;
   padding: 0.4rem 1.3rem;
   margin-right: 1.5rem;
+}
+
+.hero {
+  padding: 7.1rem 1rem 0rem 3.2rem;
+}
+
+.h1 {
+  font-size: 2.3rem;
+  line-height: 1.4;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.middle {
+  display: flex;
+  padding-top: 2.5rem;
+}
+
+.text-info {
+  flex: 2;
+  padding-right: 4rem;
+  font-size: 1.2rem;
+}
+
+.img-hero {
+  flex: 5.5;
+}
+
+.img-hero img {
+  max-width: 100%;
+}
+
+.btn-avaliation {
+  margin-top: 2.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.btn-avaliation a {
+  background-color: #0061ff;
+  color: #fff;
+  min-width: 200px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 26px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.small-text {
+  font-size: 0.93rem;
+}
+
+.small-action {
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+.small-action a {
+  text-decoration: underline;
+}
+
+.icone-seta {
+  margin-top: 3rem;
 }
