@@ -8,7 +8,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   color: rgb(72, 72, 72);
-  font-size: 14px;
+  font-size: 15px;
 }
 
 a {
@@ -37,6 +37,10 @@ footer {
   justify-content: space-between;
 }
 
+.listas ul li {
+  margin-bottom: 5px;
+}
+
 h4 {
   padding-bottom: 1rem;
 }
@@ -45,6 +49,7 @@ h4 {
   background-color: rgb(0, 106, 112);
   border-radius: 4px;
   padding: 2px 6px;
+  margin-left: 5px;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
   font-size: 12px;
   font-weight: 600;
