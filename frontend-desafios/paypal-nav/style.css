@@ -85,7 +85,7 @@ header::after {
 }
 
 .buttons-nav .type-1 {
-  padding: 10px 25px;
+  padding: 11px 25px;
   border: 1px solid #fff;
   border-radius: 25px;
   font-size: 0.8rem;
@@ -94,13 +94,17 @@ header::after {
 }
 
 .buttons-nav .type-2 {
-  padding: 10px 18px;
+  padding: 11px 18px;
   background-color: #fff;
   color: #001d3f;
   border-radius: 25px;
   font-size: 0.8rem;
   font-weight: 700;
   min-width: 84px;
+}
+
+.buttons-nav .type-2:hover {
+  background-color: #ddd;
 }
 
 .hero {
