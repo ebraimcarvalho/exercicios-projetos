@@ -1,25 +1,28 @@
-import React from 'react'
+import React from 'react';
+
+import './style.css'
 
 // import Header from './Header';
 // import MainContent from './MainContent';
 // import Footer from './Footer';
 
-function MyApp () {
-  return (
-    <div>
-      <input type="checkbox"/>
-      <p>Fazer Café</p>
+// function MyApp() {
+//   return (
+//     <div>
+//       <Header />
+//       <MainContent />
+//       <Footer />
+//     </div>
+//   )
+// }
 
-      <input type="checkbox"/>
-      <p>Fazer Feira</p>
+function MyApp() {
+  const firstName = "Ebraim";
+  const lastName = "Carvalho";
 
-      <input type="checkbox"/>
-      <p>Estudar</p>
-
-      <input type="checkbox"/>
-      <p>Trabalhar</p>
-    </div>
+  return(
+    <h1>Hello, {`${firstName} ${lastName}, tudo beleza?`}</h1>
   )
 }
 
-export default MyApp
+export default MyApp;
