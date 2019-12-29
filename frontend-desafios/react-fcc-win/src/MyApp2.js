@@ -4,17 +4,38 @@ import React from 'react'
 // import MainContent from './MainContent';
 // import Footer from './Footer';
 
-import TodoItem from './TodoItem'
+import ContactCard from './ContactCard'
 
-function MyApp () {
+function MyApp2 () {
   return (
-    <div className="todo-list">
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
+    <div className="contacts">
+      <ContactCard 
+        name="Mr. Whiskerson"
+        imgUrl="http://placekitten.com/300/200"
+        phone="(212) 555-1234"
+        email="mr.whiskaz@catnap.meow"
+      />
+      <ContactCard 
+        name="Fluffykins"
+        imgUrl="http://placekitten.com/400/200"
+        phone="(212) 555-2345"
+        email="fluffe@meow"
+      />
+      <ContactCard 
+        name="Destroyer"
+        imgUrl="http://placekitten.com/400/300"
+        phone="(212) 555-3456"
+        email="ofworlds@yahoo.com"
+      />
+      <ContactCard 
+        name="Felix"
+        imgUrl="http://placekitten.com/200/100"
+        phone="(212) 555-4567"
+        email="thecat@hotmail.com"
+      />
+
     </div>
   )
 }
 
-export default MyApp
+export default MyApp2
