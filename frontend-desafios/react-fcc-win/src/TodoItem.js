@@ -2,9 +2,9 @@ import React from 'react'
 
 function TodoItem() {
   return (
-    <div>
+    <div className="todo-item">
       <input type="checkbox"/>
-      <p>Fazer Café</p>
+      <p>Placeholder text here</p>
     </div>
   )
 }

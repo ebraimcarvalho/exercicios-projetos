@@ -1,19 +1,35 @@
-* {
-  margin: 0;
+body {
+  background-color: whitesmoke;
 }
 
-.navbar {
-  height: 100px;
-  background-color: #333;
-  color: whitesmoke;
-  margin-bottom: 15px;
-  text-align: center;
-  font-size: 30px;
+.todo-list {
+  background: white;
+  margin: auto;
+  width: 50%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  border: 1px solid #efefef;
+  padding: 30px;
 }
 
-.teste {
-  background-color: red;
+.todo-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 20px 0;
+  width: 70%;
+  border-bottom: 1px solid #cecece;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  color: #333;
+}
+
+input[type=checkbox] {
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+input[type=checkbox]:focus {
+  outline: 0;
 }

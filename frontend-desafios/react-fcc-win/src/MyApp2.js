@@ -8,7 +8,7 @@ import TodoItem from './TodoItem'
 
 function MyApp () {
   return (
-    <div>
+    <div className="todo-list">
       <TodoItem />
       <TodoItem />
       <TodoItem />
