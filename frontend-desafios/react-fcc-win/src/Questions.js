@@ -4,31 +4,11 @@ import Joke from './Joke'
 import jokesData from './jokesData'
 
 function Questions() {
+  const jokeComponents = jokesData.map(joke => <Joke key={joke.id} question={joke.question} punchLine={joke.punchLine} />)
+
   return (
     <div>
-      <Joke 
-        punchLine="I don't know, but the flag is a big plus!"
-      />
-
-      <Joke 
-        question="What's the best thing about Switzerland?"
-        punchLine="I don't know, but the flag is a big plus!"
-      />
-
-      <Joke 
-        question="What's the best thing about Switzerland?"
-        punchLine="I don't know, but the flag is a big plus!"
-      />
-
-      <Joke 
-        question="What's the best thing about Switzerland?"
-        punchLine="I don't know, but the flag is a big plus!"
-      />
-
-      <Joke 
-        question="What's the best thing about Switzerland?"
-        punchLine="I don't know, but the flag is a big plus!"
-      />
+      {jokeComponents}
     </div>
   )
 }
