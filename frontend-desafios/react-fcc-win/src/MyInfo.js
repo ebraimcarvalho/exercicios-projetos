@@ -7,8 +7,8 @@ function MyInfo() {
       <p>I am learning React, and I want visit:</p>
       <ul>
         <li>Netherlands</li>
-        <li>Portugal</li>
-        <li>Spain</li>
+        <li>Germany</li>
+        <li>Ireland</li>
       </ul>
     </div>
   )
