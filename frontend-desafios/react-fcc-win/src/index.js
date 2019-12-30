@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom'
 import './style.css';
 import * as serviceWorker from './serviceWorker';
 
-import Questions from './Questions'
+import MyApp from './MyApp'
 
 ReactDOM.render(
-  <Questions />,
+  <MyApp />,
   document.getElementById('root')
 )
 
