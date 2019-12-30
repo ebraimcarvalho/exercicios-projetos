@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom'
 import './style.css';
 import * as serviceWorker from './serviceWorker';
 
-import State from './State'
+import Todo from './Todo'
 
 ReactDOM.render(
-  <State />,
+  <Todo />,
   document.getElementById('root')
 )
 
