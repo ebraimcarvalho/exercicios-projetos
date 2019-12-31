@@ -2,7 +2,7 @@ import React from 'react'
 
 import TodoItem from './TodoItem'
 import todosData from './todosData'
-// 33
+// 34
 class Todo extends React.Component {
   constructor() {
     super()
