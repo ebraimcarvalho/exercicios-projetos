@@ -2,10 +2,6 @@ body {
   background-color: whitesmoke;
 }
 
-#root {
-  text-align: center;
-}
-
 .todo-list {
   background: white;
   margin: auto;
