@@ -1,25 +1,24 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function handleClick() {
+  console.log("I was clicked")
 }
 
-export default App;
+function handleMouse() {
+  alert("I was over something!")
+}
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <img onMouseOver={handleMouse} src="https://www.fillmurray.com/200/100" alt="FilmMurray"/>
+        <br/>
+        <br/>
+        <button onClick={handleClick}>Click me</button>
+      </div>
+    )
+  }
+}
+
+export default App
