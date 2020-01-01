@@ -2,7 +2,7 @@ import React from 'react'
 
 import TodoItem from './TodoItem'
 import todosData from './todosData'
-
+// 34
 class Todo extends React.Component {
   constructor() {
     super()
@@ -20,7 +20,7 @@ class Todo extends React.Component {
         }
         return todo
       })
-      
+
       return {
         todos: updatedTodos
       }
@@ -29,15 +29,15 @@ class Todo extends React.Component {
 
   render() {
     const todoItems = this.state.todos.map(item => 
-      <TodoItem key={item.id} data={item} handleChange={this.handleChange}/>)
-      console.log(todoItems)
+    <TodoItem key={item.id} data={item} handleChange={this.handleChange}/>)
+    console.log(todoItems)
 
     return (
       <div className="todo-list">
         {todoItems}
       </div>
     )
-  }
+  }  
 }
 
 export default Todo
