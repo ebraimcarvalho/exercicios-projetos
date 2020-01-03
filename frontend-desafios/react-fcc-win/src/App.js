@@ -1,21 +1,26 @@
 import React from 'react'
 
-function handleClick() {
-  console.log("I was clicked")
-}
-
-function handleMouse() {
-  alert("I was over something!")
-}
-
 class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      isLoading: true
+    }
+  }
+
+  componentDidMount() {
+    setInterval(() => {
+      this.setState({
+        isLoading: false
+      })
+    }, 2000)
+  }
+
   render() {
+    console.log(this.state.isLoading)
     return (
       <div>
-        <img onMouseOver={handleMouse} src="https://www.fillmurray.com/200/100" alt="FilmMurray"/>
-        <br/>
-        <br/>
-        <button onClick={handleClick}>Click me</button>
+        {this.state.isLoading ? <h1>Loading...</h1> : <h1>Please, do Login!</h1>}
       </div>
     )
   }
