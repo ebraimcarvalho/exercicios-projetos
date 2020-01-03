@@ -1,28 +1,34 @@
 import React from 'react'
-
+//41
 class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      isLoggedIn: false
+      loading: false,
+      character: {}
     }
-    this.handleClick = this.handleClick.bind(this)
   }
 
-  handleClick() {
-    this.setState(prevState => {
-      return {
-        isLoggedIn: !prevState.isLoggedIn
-      }
+  componentDidMount() {
+    this.setState({
+      loading: true
     })
+    fetch("https://swapi.co/api/people/1")
+      .then(response => response.json())
+      .then(data => {
+        this.setState({
+          loading: false,
+          character: data
+        })
+      })
   }
 
   render() {
-    console.log(this.state.isLoggedIn)
+    const text = this.state.loading ? "Loading..." : this.state.character.name
+    console.log(this.state.character)
     return (
       <div>
-        <h3>You are {this.state.isLoggedIn ? "Logged in" : "Logged out"}</h3>
-        <button onClick={this.handleClick}>{this.state.isLoggedIn ? "Log out" : "Log in"}</button>
+        <h1>{text}</h1>
       </div>
     )
   }
