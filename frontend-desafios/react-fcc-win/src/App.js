@@ -4,23 +4,25 @@ class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      isLoading: true
+      isLoggedIn: false
     }
+    this.handleClick = this.handleClick.bind(this)
   }
 
-  componentDidMount() {
-    setInterval(() => {
-      this.setState({
-        isLoading: false
-      })
-    }, 2000)
+  handleClick() {
+    this.setState(prevState => {
+      return {
+        isLoggedIn: !prevState.isLoggedIn
+      }
+    })
   }
 
   render() {
-    console.log(this.state.isLoading)
+    console.log(this.state.isLoggedIn)
     return (
       <div>
-        {this.state.isLoading ? <h1>Loading...</h1> : <h1>Please, do Login!</h1>}
+        <h3>You are {this.state.isLoggedIn ? "Logged in" : "Logged out"}</h3>
+        <button onClick={this.handleClick}>{this.state.isLoggedIn ? "Log out" : "Log in"}</button>
       </div>
     )
   }
