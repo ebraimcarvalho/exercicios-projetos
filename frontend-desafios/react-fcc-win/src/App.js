@@ -1,34 +1,31 @@
 import React from 'react'
-//41
+
 class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      loading: false,
-      character: {}
+      firstName: "",
+      lastName: "",
     }
+    this.handleChange = this.handleChange.bind(this)
   }
 
-  componentDidMount() {
+  handleChange(event) {
     this.setState({
-      loading: true
+      [event.target.name]: event.target.value
     })
-    fetch("https://swapi.co/api/people/1")
-      .then(response => response.json())
-      .then(data => {
-        this.setState({
-          loading: false,
-          character: data
-        })
-      })
   }
 
   render() {
-    const text = this.state.loading ? "Loading..." : this.state.character.name
-    console.log(this.state.character)
     return (
       <div>
-        <h1>{text}</h1>
+        <form>
+          <input type="text" value={this.state.firstName} name="firstName" placeholder="First Name" onChange={this.handleChange}/>
+          <br/>
+          <input type="text" value={this.state.lastName} name="lastName" placeholder="Last Name" onChange={this.handleChange}/>
+          <h1>{this.state.firstName} {this.state.lastName}</h1>
+          <h2>work</h2>
+        </form>
       </div>
     )
   }
