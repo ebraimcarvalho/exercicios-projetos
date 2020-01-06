@@ -8,7 +8,8 @@ class App extends React.Component {
       lastName: "",
       isFriendly: true,
       textarea: "some text default",
-      gender: ""
+      gender: "",
+      favColor: "blue"
     }
     this.handleChange = this.handleChange.bind(this)
   }
@@ -43,9 +44,19 @@ class App extends React.Component {
             <input type="radio" name="gender" value="female" checked={this.state.gender === "female"} onChange={this.handleChange}/>
             Female
           </label>
+          <br/>
+          <label>Favorite color:</label>
+          <select name="favColor" value={this.state.favColor} onChange={this.handleChange}>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="red">Red</option>
+            <option value="orange">Orange</option>
+            <option value="yellow">Yellow</option>
+          </select>
 
           <h1>{this.state.firstName} {this.state.lastName}</h1>
-          <h2>work</h2>
+          <h2>You are a {this.state.gender} person</h2>
+          <h2>You favorite color is {this.state.favColor}</h2>
         </form>
       </div>
     )
