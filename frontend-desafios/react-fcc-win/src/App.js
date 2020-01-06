@@ -1,5 +1,5 @@
 import React from 'react'
-//42
+// 43
 class App extends React.Component {
   constructor() {
     super()
@@ -7,7 +7,7 @@ class App extends React.Component {
       firstName: "",
       lastName: "",
       isFriendly: true,
-      textarea: "some text default",
+      textarea: "Some text default",
       gender: "",
       favColor: "blue"
     }
@@ -15,7 +15,7 @@ class App extends React.Component {
   }
 
   handleChange(event) {
-    const {name, value, type, checked} = event.target
+    const { name, value, type, checked } = event.target
     type === "checkbox" ? this.setState({ [name]: checked }) : this.setState({ [name]: value })
   }
 
@@ -24,14 +24,14 @@ class App extends React.Component {
     return (
       <div>
         <form>
-          <input type="text" value={this.state.firstName} name="firstName" placeholder="First Name" onChange={this.handleChange}/>
+          <input type="text" name="firstName" value={this.state.firstName} onChange={this.handleChange} placeholder="First Name"/>
           <br/>
-          <input type="text" value={this.state.lastName} name="lastName" placeholder="Last Name" onChange={this.handleChange}/>
+          <input type="text" name="lastName" value={this.state.lastName} onChange={this.handleChange} placeholder="Last Name"/>
           <br/>
-          <textarea value={this.state.textarea} name="textarea" onChange={this.handleChange}/>
+          <textarea name="textarea" value={this.state.textarea} onChange={this.handleChange}></textarea>
           <br/>
           <label>
-            <input type="checkbox" name="isFriendly" checked={this.state.isFriendly} onChange={this.handleChange}/>
+            <input type="checkbox" checked={this.state.isFriendly} name="isFriendly" onChange={this.handleChange}/>
             Is Friendly?
           </label>
           <br/>
@@ -45,19 +45,19 @@ class App extends React.Component {
             Female
           </label>
           <br/>
-          <label>Favorite color:</label>
-          <select name="favColor" value={this.state.favColor} onChange={this.handleChange}>
-            <option value="blue">Blue</option>
-            <option value="green">Green</option>
-            <option value="red">Red</option>
-            <option value="orange">Orange</option>
-            <option value="yellow">Yellow</option>
-          </select>
-
-          <h1>{this.state.firstName} {this.state.lastName}</h1>
-          <h2>You are a {this.state.gender} person</h2>
-          <h2>You favorite color is {this.state.favColor}</h2>
+          <label>Favorite color: </label>
+            <select name="favColor" value={this.state.favColor} onChange={this.handleChange}>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+              <option value="red">Red</option>
+              <option value="orange">Orange</option>
+              <option value="yellow">Yellow</option>
+            </select>          
         </form>
+
+        <h1>Hi {this.state.firstName} {this.state.lastName}</h1>
+        <h3>{this.state.isFriendly ? "You are Friendly!" : "You aren't Friendly!"}</h3>
+        <h3>You are a {this.state.gender} person and your favorite color is {this.state.favColor}</h3>
       </div>
     )
   }
