@@ -1,63 +1,55 @@
 import React from 'react'
-// 43
+
 class App extends React.Component {
   constructor() {
     super()
     this.state = {
       firstName: "",
       lastName: "",
-      isFriendly: true,
-      textarea: "Some text default",
+      age: 0,
       gender: "",
-      favColor: "blue"
+      location: "New York",
+      dietRestrict: ""
     }
     this.handleChange = this.handleChange.bind(this)
   }
 
   handleChange(event) {
-    const { name, value, type, checked } = event.target
-    type === "checkbox" ? this.setState({ [name]: checked }) : this.setState({ [name]: value })
+    const {name, value, type, checked} = event.target
+    type === "checkbox" ? this.setState({[name]: checked}) : this.setState({[name]: value})
   }
 
   render() {
-    console.log(this.state)
     return (
       <div>
         <form>
-          <input type="text" name="firstName" value={this.state.firstName} onChange={this.handleChange} placeholder="First Name"/>
-          <br/>
-          <input type="text" name="lastName" value={this.state.lastName} onChange={this.handleChange} placeholder="Last Name"/>
-          <br/>
-          <textarea name="textarea" value={this.state.textarea} onChange={this.handleChange}></textarea>
-          <br/>
-          <label>
-            <input type="checkbox" checked={this.state.isFriendly} name="isFriendly" onChange={this.handleChange}/>
-            Is Friendly?
-          </label>
-          <br/>
+          <input type="text" name="firstName" value={this.state.firstName} onChange={this.handleChange} placeholder="First Name" />
+          <input type="text" name="lastName" value={this.state.lastName} onChange={this.handleChange} placeholder="Last Name" />
+          <input type="number" name="age" value={this.state.age} onChange={this.handleChange} min="0" />
           <label>
             <input type="radio" name="gender" value="male" checked={this.state.gender === "male"} onChange={this.handleChange}/>
             Male
           </label>
-          <br/>
           <label>
             <input type="radio" name="gender" value="female" checked={this.state.gender === "female"} onChange={this.handleChange}/>
             Female
           </label>
           <br/>
-          <label>Favorite color: </label>
-            <select name="favColor" value={this.state.favColor} onChange={this.handleChange}>
-              <option value="blue">Blue</option>
-              <option value="green">Green</option>
-              <option value="red">Red</option>
-              <option value="orange">Orange</option>
-              <option value="yellow">Yellow</option>
-            </select>          
-        </form>
+          <label>Travel to: </label>
+          <select name="location" value={this.state.location} onChange={this.handleChange}>
+            <option value="New York">New York</option>
+            <option value="Lisboa">Lisboa</option>
+            <option value="São Paulo">São Paulo</option>
+          </select>
+          <br/>
+          <label>Diet Restriction? </label>
+          <label>
+            <input type="checkbox" name="dietRestrict" value={this.state.dietRestrict} onChange={this.handleChange} />
+            Vegan
+          </label>
 
-        <h1>Hi {this.state.firstName} {this.state.lastName}</h1>
-        <h3>{this.state.isFriendly ? "You are Friendly!" : "You aren't Friendly!"}</h3>
-        <h3>You are a {this.state.gender} person and your favorite color is {this.state.favColor}</h3>
+          <h1>{this.state.firstName} {this.state.lastName}, {this.state.age}, {this.state.gender}, to {this.state.location} and are diet restric {this.state.dietRestrict}</h1>
+        </form>
       </div>
     )
   }
