@@ -5,11 +5,11 @@ function FormComponent(props) {
     <div>
       <form>
 
-        <input type="text" name="firstName" value={props.firstName} onChange={props.handleChange} placeholder="First Name" /><br/>
+        <input type="text" name="firstName" value={props.data.firstName} onChange={props.handleChange} placeholder="First Name" /><br/>
 
-        <input type="text" name="lastName" value={props.lastName} onChange={props.handleChange} placeholder="Last Name" /><br/>
+        <input type="text" name="lastName" value={props.data.lastName} onChange={props.handleChange} placeholder="Last Name" /><br/>
 
-        <input type="number" name="age" value={props.age} onChange={props.handleChange} min="0" placeholder="Age" /><br/>
+        <input type="number" name="age" value={props.data.age} onChange={props.handleChange} min="0" placeholder="Age" /><br/>
 
         <label>Gender: </label>
         <label>
@@ -22,7 +22,7 @@ function FormComponent(props) {
         </label><br/>
 
         <label>Travel to: </label>
-        <select name="destination" value={props.destination} onChange={props.handleChange}>
+        <select name="destination" value={props.data.destination} onChange={props.handleChange}>
           <option value="New York">New York</option>
           <option value="Lisboa">Lisboa</option>
           <option value="São Paulo">São Paulo</option>
@@ -30,15 +30,15 @@ function FormComponent(props) {
 
         <label>Diet Restriction? </label>
         <label>
-          <input type="checkbox" name="isVegetarian" checked={props.isVegetarian} onChange={props.handleChange} />
+          <input type="checkbox" name="isVegetarian" checked={props.data.isVegetarian} onChange={props.handleChange} />
           Vegetarian
         </label>
         <label>
-          <input type="checkbox" name="isKosher" checked={props.isKosher} onChange={props.handleChange} />
+          <input type="checkbox" name="isKosher" checked={props.data.isKosher} onChange={props.handleChange} />
           Kosher
         </label>
         <label>
-          <input type="checkbox" name="isLactoseFree" checked={props.isLactoseFree} onChange={props.handleChange} />
+          <input type="checkbox" name="isLactoseFree" checked={props.data.isLactoseFree} onChange={props.handleChange} />
           Lactose Free
         </label><br/>
 
