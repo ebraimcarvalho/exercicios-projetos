@@ -1,20 +1,29 @@
 import React from 'react'
 //42
 class App extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      firstName: "",
-      lastName: "",
-      isFriendly: true,
-      textarea: "Some text default",
-      gender: "",
-      favColor: "blue"
-    }
-    this.handleChange = this.handleChange.bind(this)
+  state = {
+    firstName: "",
+    lastName: "",
+    isFriendly: true,
+    textarea: "Some text default",
+    gender: "",
+    favColor: "blue"
   }
 
-  handleChange(event) {
+  // constructor() {
+  //   super()
+  //   this.state = {
+  //     firstName: "",
+  //     lastName: "",
+  //     isFriendly: true,
+  //     textarea: "Some text default",
+  //     gender: "",
+  //     favColor: "blue"
+  //   }
+
+  // }
+
+  handleChange = (event) => {
     const {name, value, type, checked} = event.target
     type === "checkbox" ? this.setState({ [name]: checked }) : this.setState({ [name]: value })
   }
