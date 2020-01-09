@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom'
 import './style.css';
 import * as serviceWorker from './serviceWorker';
 
-import AppForm from './AppForm'
+import App from './App'
 
 ReactDOM.render(
-  <AppForm />,
+  <App />,
   document.getElementById('root')
 )
 
