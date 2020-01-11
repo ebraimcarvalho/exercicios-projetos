@@ -1,11 +1,11 @@
 import React from 'react'
-//42
+//46 - Not necessary Constructor and bind the functions
 class App extends React.Component {
   state = {
     firstName: "",
     lastName: "",
     isFriendly: true,
-    textarea: "Some text default",
+    textarea: "",
     gender: "",
     favColor: "blue"
   }
