@@ -32,3 +32,38 @@ console.log(factorial(4));
 
 let myArray = ['1', '2', '3', '4', '5'];
 console.log(myArray.slice(1, 5));
+
+// let a = [1, 2, 3]
+// a.map(function(element) { console.log(element*3) })
+
+// let a1 = ['a', 10, 'b', 20, 'c', 30, 5]
+// let a2 = a1.filter(function(item) { return typeof item === 'number'; })
+// console.log(a2)  // logs [10, 20, 30]
+
+function isNumber(value) {
+  return typeof value === 'number'
+}
+let a1 = [1, 2, 3]
+console.log(a1.some(isNumber))  // logs true
+let a2 = [1, '2', 3]
+console.log(a2.some(isNumber))  // logs true
+let a3 = ['1', '2', '3']
+console.log(a3.some(isNumber))  // logs false
+
+let a = [11, 20, 30]
+let total = a.reduce(function(accumulator, currentValue) { return accumulator + currentValue })
+console.log(total) // Prints 60
+
+var myObj = new Object(),
+    str = 'myString',
+    rand = Math.random(),
+    obj = new Object();
+
+myObj.type              = 'Dot syntax';
+myObj['date created']   = 'String with space';
+myObj[str]              = 'String value';
+myObj[rand]             = 'Random Number';
+myObj[obj]              = 'Object';
+myObj['']               = 'Even an empty string';
+
+console.log(myObj);
