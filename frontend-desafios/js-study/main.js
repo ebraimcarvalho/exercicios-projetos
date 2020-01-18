@@ -67,3 +67,5 @@ myObj[obj]              = 'Object';
 myObj['']               = 'Even an empty string';
 
 console.log(myObj);
+
+document.write(total)
