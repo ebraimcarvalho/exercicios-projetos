@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>JS - Study</title>
+  <script>
+    window.onload = function() {
+  const heading = document.createElement('h1');
+  const heading_text = document.createTextNode('Hello headers!');
+
+  heading.appendChild(heading_text);
+  document.appendChild(heading);
+}
+  </script>
 </head>
 <body>
   <h1>Hello, world!</h1>
@@ -24,6 +33,10 @@
     </p>
     <p><input id="btn" type="button" value="How many are selected?" /></p>
   </form>
+
+  <input type="button" value="Change this document." onclick="change()">
+  <h2>Header</h2>
+  <p>Paragraph</p>
   
   <script src="./main.js"></script>
 </body>
