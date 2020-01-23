@@ -68,4 +68,5 @@ myObj['']               = 'Even an empty string';
 
 console.log(myObj);
 
-document.write(total)
+const body = document.getElementsByTagName('body');
+body.addEventListener('on load', document.write('Hello JavaScript, I\'ll the master ninja JS Dev!'))
