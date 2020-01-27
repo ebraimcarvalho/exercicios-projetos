@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Changing color and font-size example</title>
+
+<script>
+function changeText() {
+  var p = document.getElementById("pid");
+
+  p.style.color = "magenta"
+  p.style.fontSize = "18pt"
+  p.style.textDecoration = "underline"
+  p.style.cursor = "pointer"
+}
+
+function resetText() {
+  var p = document.getElementById("pid");
+
+  p.style.color = "black"
+  p.style.fontSize = "12pt"
+  p.style.textDecoration = "none"
+  p.style.cursor = "none"
+}
+</script>
+</head>
+<body>
+
+<p id="pid" onclick="window.location.href = 'https://www.google.com';">link to google</p>
+
+<form>
+  <p><input value="Click for change style" type="button" onclick="changeText()" /></p>
+  <p><input value="Click for style back" type="button" onclick="resetText()" /></p>
+</form>
+
+</body>
+</html>
