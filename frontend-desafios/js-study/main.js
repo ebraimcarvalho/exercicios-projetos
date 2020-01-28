@@ -71,8 +71,16 @@ myObj['']               = 'Even an empty string';
 
 console.log(myObj);
 
+var p1 = document.querySelector('p');
+var text = p1.textContent || text.innerText;
+console.log(text);
+
 const bodys = document.getElementsByTagName('body');
-bodys.addEventListener('on load', document.write('Hello JavaScript, I\'ll the master ninja JS Dev! By the way, do you want a cookie? this was inserted by main.js document.write'))
+bodys.addEventListener('on load', greet());
+function greet() {
+  console.log('Deu certo!')
+  
+}
 
 function change() {
   // document.getElementsByTagName("H2") returns a NodeList of the <h2>
@@ -85,10 +93,11 @@ function change() {
   
   var para = document.getElementsByTagName("P").item(3);
   para.firstChild.data = "This is the first paragraph.";
-  para.style.background = "rgb(255,0,0)";
+  para.style.background = "rgb(100,10,110)";
+  para.style.color = "white";
   
   // create a new Text node for the second paragraph
-  var newText = document.createTextNode("This is the second paragraph.");
+  var newText = document.createTextNode("This is other paragraph.");
   // create a new Element to be the second paragraph
   var newElement = document.createElement("P");
   // put the text in the paragraph
