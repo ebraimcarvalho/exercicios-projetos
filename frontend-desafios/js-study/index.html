@@ -7,11 +7,11 @@
   <title>JS - Study</title>
   <script>
     window.onload = function() {
-  const heading = document.createElement('h1');
-  const heading_text = document.createTextNode('Hello headers!');
+  const heading = document.createElement('h4');
+  const heading_text = document.createTextNode('Hello Ebra! [this was inserted by script createElement and createTextNode]');
 
   heading.appendChild(heading_text);
-  document.appendChild(heading);
+  document.body.appendChild(heading);
 }
   </script>
 </head>
@@ -36,7 +36,7 @@
 
   <input type="button" value="Change this document." onclick="change()">
   <h2>Header</h2>
-  <p>Paragraph</p>
+  <p>Paragraph 1</p>
   
   <script src="./main.js"></script>
 </body>
