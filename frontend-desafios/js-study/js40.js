@@ -4,6 +4,7 @@ var btnSoma = document.getElementById('sum')
 var btnExibe = document.getElementById('exibeNome')
 var btnQtd = document.getElementById('exibeQtd')
 var inputNome = document.querySelector('#nome')
+var lampApagada = document.getElementById('lampApagada')
 
 btnHello.onclick = function() {
   var paragrafo = document.createElement('h3')
@@ -29,4 +30,8 @@ btnExibe.addEventListener('click', function() {
 
 btnQtd.onclick = function() {
   alert('A quantidade de caracteres do campo é igual a ' + inputNome.value.length)
+}
+
+lampApagada.onclick = function() {
+  lampApagada.src = 'https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada-on.jpg?raw=true';
 }
