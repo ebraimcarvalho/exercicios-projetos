@@ -17,6 +17,8 @@ var quadrado = document.getElementById('quadrado')
 var verde = document.getElementById('verde')
 var vermelho = document.getElementById('vermelho')
 var divResultado = document.getElementById('resultado')
+var divResultado2 = document.getElementById('resultado2')
+var btnResultado2 = document.getElementById('btnResultado2')
 
 btnHello.onclick = function() {
   var paragrafo = document.createElement('h3')
@@ -75,10 +77,14 @@ cpf.onchange = function() {
 
 // Função para retornar a soma de dois valores digitados no input
 btnResultado.onclick = function() {
-  if(typeof soma1.value != 'number' && typeof soma2.value != 'number') {
+  if (soma1.value == '' || soma2.value == '') {
+    alert('Forneça dois valores!')
+  } else if(typeof soma1.value != 'number' && typeof soma2.value != 'number') {
     var soma = parseInt(soma1.value) + parseInt(soma2.value)
-    var resultado = document.createTextNode(soma)
-    document.getElementById('resultado-soma').appendChild(resultado)
+    var paragrafo = document.createElement('p')
+    var resultado = document.createTextNode('O resultado de ' + soma1.value + ' + ' + soma2.value + ' é igual a ' + soma)
+    paragrafo.appendChild(resultado)
+    document.getElementById('resultado-soma').appendChild(paragrafo)
   } else {
     alert('xiii!')
   }
@@ -103,3 +109,12 @@ window.onload = function() {
   paragrafo.appendChild(texto);
   divResultado.appendChild(paragrafo);
 }
+
+btnResultado2.onclick = function() {
+  var paragrafo = document.createElement('p');
+  var texto = document.createTextNode('Esse texto foi inserido via js e botão...');
+  paragrafo.appendChild(texto);
+  divResultado2.appendChild(paragrafo);
+}
+
+alert('O resto da divisão de 5/2 é igual a: ' + 5%2)
