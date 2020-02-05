@@ -117,4 +117,23 @@ btnResultado2.onclick = function() {
   divResultado2.appendChild(paragrafo);
 }
 
-alert('O resto da divisão de 5/2 é igual a: ' + 5%2)
+// alert('O resto da divisão de 5/2 é igual a: ' + 5%2)
+
+// console.log('Digite um valor: ')
+// var parametro = Number(prompt())
+// if (parametro % 2 === 0) {
+//   console.log('Seu parametro e Par')
+// } else {
+//   console.log('Seu parametro é Ímpar')
+// }
+
+console.log('Digite um valor: ')
+var parametro1 = Number(prompt())
+var parametro2 = Number(prompt())
+multiplica(parametro1, parametro2)
+
+function multiplica(a, b) {
+  var multi = a * b
+  console.log(multi)
+}
+
