@@ -16,6 +16,7 @@ var cpf = document.getElementById('cpf')
 var quadrado = document.getElementById('quadrado')
 var verde = document.getElementById('verde')
 var vermelho = document.getElementById('vermelho')
+var divResultado = document.getElementById('resultado')
 
 btnHello.onclick = function() {
   var paragrafo = document.createElement('h3')
@@ -56,6 +57,9 @@ saudacao.onclick = function() {
 }
 
 // Função para criar um paragrafo com o valor digitado no input e criar outro paragrafo com o valor digitado sem a ponutação
+/* Comentario
+de várias
+linhas */
 cpf.onchange = function() {
   var span = document.createElement('p');
   var value = document.createTextNode(cpf.value);
@@ -91,4 +95,11 @@ verde.onclick = function() {
 
 vermelho.onclick = function() {
   quadrado.style.backgroundColor = 'red'
+}
+
+window.onload = function() {
+  var paragrafo = document.createElement('p');
+  var texto = document.createTextNode('Esse texto foi inserido pelo JavaScript...');
+  paragrafo.appendChild(texto);
+  divResultado.appendChild(paragrafo);
 }
