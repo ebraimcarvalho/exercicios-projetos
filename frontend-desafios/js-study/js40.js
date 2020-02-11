@@ -147,6 +147,11 @@ btnResultado2.onclick = function() {
 var anoNascimento = Number(prompt('Qual ano do seu nascimento?'));
 var dataAtual = new Date();
 var idade = dataAtual.getFullYear() - anoNascimento;
+if(idade >= 18) {
+  alert('Você é maior de idade!')
+} else {
+  alert('Você é menor de idade!')
+}
 alert(`Você tem ${idade} anos!`);
 // if (anoNascimento >= )
 // console.log(anoNascimento)
