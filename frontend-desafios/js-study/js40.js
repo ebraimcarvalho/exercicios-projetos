@@ -154,10 +154,34 @@ btnResultado2.onclick = function() {
 // }
 // alert(`Você tem ${idade} anos!`);
 
+// with for loop
 // divResultado.innerHTML = 'Repetição';
-for(let i = 0; i < 20; i++) {
+// for(let i = 0; i < 20; i++) {
+//   var createPara = document.createElement('p');
+//   var createText = document.createTextNode('Repetition');
+//   createPara.appendChild(createText)
+//   divResultado.appendChild(createPara);
+// }
+
+// with foreach
+
+// var array5 = [1,2,3,4,5];
+// function repete() {
+//   var createPara = document.createElement('p');
+//   var createText = document.createTextNode('Repetition');
+//   createPara.appendChild(createText)
+//   divResultado.appendChild(createPara);
+// }
+
+// array5.forEach(repete)
+
+// with while loop
+let i = 0;
+while (i < 6) {
   var createPara = document.createElement('p');
   var createText = document.createTextNode('Repetition');
   createPara.appendChild(createText)
   divResultado.appendChild(createPara);
+  i++;
+  console.log(i);
 }
