@@ -144,14 +144,20 @@ btnResultado2.onclick = function() {
 // alert(`O valor para pagamento é: ${paraPagar}`);
 
 // alert('Qual ano do seu nascimento?');
-var anoNascimento = Number(prompt('Qual ano do seu nascimento?'));
-var dataAtual = new Date();
-var idade = dataAtual.getFullYear() - anoNascimento;
-if(idade >= 18) {
-  alert('Você é maior de idade!')
-} else {
-  alert('Você é menor de idade!')
+// var anoNascimento = Number(prompt('Qual ano do seu nascimento?'));
+// var dataAtual = new Date();
+// var idade = dataAtual.getFullYear() - anoNascimento;
+// if(idade >= 18) {
+//   alert('Você é maior de idade!')
+// } else {
+//   alert('Você é menor de idade!')
+// }
+// alert(`Você tem ${idade} anos!`);
+
+// divResultado.innerHTML = 'Repetição';
+for(let i = 0; i < 20; i++) {
+  var createPara = document.createElement('p');
+  var createText = document.createTextNode('Repetition');
+  createPara.appendChild(createText)
+  divResultado.appendChild(createPara);
 }
-alert(`Você tem ${idade} anos!`);
-// if (anoNascimento >= )
-// console.log(anoNascimento)
