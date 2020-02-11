@@ -127,13 +127,26 @@ btnResultado2.onclick = function() {
 //   console.log('Seu parametro é Ímpar')
 // }
 
-console.log('Digite um valor: ')
-var parametro1 = Number(prompt())
-var parametro2 = Number(prompt())
-multiplica(parametro1, parametro2)
+// console.log('Digite um valor: ')
+// var parametro1 = Number(prompt())
+// var parametro2 = Number(prompt())
+// multiplica(parametro1, parametro2)
 
-function multiplica(a, b) {
-  var multi = a * b
-  console.log(multi)
-}
+// function multiplica(a, b) {
+//   var multi = a * b
+//   console.log(`A multiplicação entre ${parametro1} e ${parametro2} é ${multi}`)
+// }
 
+// alert('Quanto custa o produto?');
+// var valorParaDesconto = Number(prompt())
+// var desconto = 0.05;
+// var paraPagar = valorParaDesconto - (valorParaDesconto * desconto)
+// alert(`O valor para pagamento é: ${paraPagar}`);
+
+// alert('Qual ano do seu nascimento?');
+var anoNascimento = Number(prompt('Qual ano do seu nascimento?'));
+var dataAtual = new Date();
+var idade = dataAtual.getFullYear() - anoNascimento;
+alert(`Você tem ${idade} anos!`);
+// if (anoNascimento >= )
+// console.log(anoNascimento)
