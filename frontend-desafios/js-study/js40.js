@@ -176,12 +176,42 @@ btnResultado2.onclick = function() {
 // array5.forEach(repete)
 
 // with while loop
-let i = 0;
-while (i < 6) {
-  var createPara = document.createElement('p');
-  var createText = document.createTextNode('Repetition');
-  createPara.appendChild(createText)
-  divResultado.appendChild(createPara);
-  i++;
-  console.log(i);
+// let i = 0;
+// while (i < 6) {
+//   var createPara = document.createElement('p');
+//   var createText = document.createTextNode('Repetition');
+//   createPara.appendChild(createText)
+//   divResultado.appendChild(createPara);
+//   i++;
+//   console.log(i);
+// }
+
+// let j = 0;
+// while (j <= 10) {
+//   var createPara = document.createElement('span');
+//   var createText = document.createTextNode(`${j}, `);
+//   createPara.appendChild(createText)
+//   divResultado.appendChild(createPara);
+//   j++;
+//   console.log(j);
+// }
+
+// for (let k = 1; k <= 20; k++) {
+//   if (k % 2 == 0) {
+//     var createSpan = document.createElement('span');
+//     var createText = document.createTextNode(`${k}, `);
+//     createSpan.appendChild(createText);
+//     divResultado.appendChild(createSpan);
+//     console.log(k);
+//   }
+// }
+
+for (let i = 0; i <= 10; i++) {
+  for (let j = 0; j <= 10; j++) {
+    var createPara = document.createElement('p');
+    var createText = document.createTextNode(`${i} * ${j} = ${(i * j)}`);
+    createPara.appendChild(createText);
+    divResultado.appendChild(createPara);
+    console.log(createPara)
+  }
 }
