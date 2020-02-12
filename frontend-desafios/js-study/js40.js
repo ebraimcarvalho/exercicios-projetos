@@ -19,6 +19,9 @@ var vermelho = document.getElementById('vermelho')
 var divResultado = document.getElementById('resultado')
 var divResultado2 = document.getElementById('resultado2')
 var btnResultado2 = document.getElementById('btnResultado2')
+var nomesID = document.getElementById('nomes')
+var nomeArray = document.getElementById('nomeArray')
+var btnArray = document.getElementById('btnArray')
 
 btnHello.onclick = function() {
   var paragrafo = document.createElement('h3')
@@ -237,17 +240,48 @@ btnResultado2.onclick = function() {
 // console.log(`${date.getDate()}/0${date.getMonth()+1}/${date.getFullYear()}`)
 // console.log(`O pŕoximo mês é ${date.getMonth()+2}`)
 
-var deuses = ['Aegir', 'Aud', 'Balder']
-console.log(deuses.length)
-deuses.push('Loki', 'Odin', 'Frey');
-console.log(deuses)
-console.log(deuses.length)
+// var deuses = ['Aegir', 'Aud', 'Balder']
+// console.log(deuses.length)
+// deuses.push('Loki', 'Odin', 'Frey');
+// console.log(deuses)
+// console.log(deuses.length)
 // for(let i = 0; i < deuses.length; i++) {
 //   alert(deuses[i]);
 // }
 // deuses.map(item => alert(item))
 
-var numbers = [5, 7, 1, 8, 9]
-console.log(numbers);
-numbers.sort();
-console.log(numbers)
+// var numbers = [5, 7, 1, 8, 9]
+// console.log(numbers);
+// numbers.sort();
+// console.log(numbers)
+// numbers.reverse();
+// console.log(numbers)
+
+// var deuses = ['Aegir', 'Aud', 'Balder', 'Bragi', 'Búri', 'Dag', 'Dellingr']
+// for (let i= 0; i < deuses.length; i++) {
+//   var createPara = document.createElement('li');
+//   var createText = document.createTextNode(`${deuses[i]}`);
+//   createPara.appendChild(createText);
+//   nomesID.appendChild(createPara);
+//   console.log(deuses[i])
+// }
+
+// newArray = []
+// btnArray.onclick = function() {
+//   var createPara = document.createElement('li');
+//   var createText = document.createTextNode(`${nomeArray.value}`)
+//   createPara.appendChild(createText)
+//   nomesID.appendChild(createPara)
+//   newArray.push(nomeArray.value)
+//   console.log(newArray)
+// }
+
+btnArray.onclick = function contador() {
+  var time = Number(nomeArray.value)
+  for (let i = time; i >= 0; i--) {
+    createPara = document.createElement('p')
+    createText = document.createTextNode(`${i}`)
+    createPara.appendChild(createText)
+    nomesID.appendChild(createPara)
+  }
+}
