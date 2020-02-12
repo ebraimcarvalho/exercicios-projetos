@@ -233,6 +233,21 @@ btnResultado2.onclick = function() {
 // var numeroAleat = Math.floor(Math.random() * 100);
 // alert(numeroAleat)
 
-var date = new Date();
-console.log(`${date.getDate()}/0${date.getMonth()+1}/${date.getFullYear()}`)
-console.log(`O pŕoximo mês é ${date.getMonth()+2}`)
+// var date = new Date();
+// console.log(`${date.getDate()}/0${date.getMonth()+1}/${date.getFullYear()}`)
+// console.log(`O pŕoximo mês é ${date.getMonth()+2}`)
+
+var deuses = ['Aegir', 'Aud', 'Balder']
+console.log(deuses.length)
+deuses.push('Loki', 'Odin', 'Frey');
+console.log(deuses)
+console.log(deuses.length)
+// for(let i = 0; i < deuses.length; i++) {
+//   alert(deuses[i]);
+// }
+// deuses.map(item => alert(item))
+
+var numbers = [5, 7, 1, 8, 9]
+console.log(numbers);
+numbers.sort();
+console.log(numbers)
