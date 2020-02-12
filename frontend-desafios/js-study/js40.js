@@ -206,12 +206,29 @@ btnResultado2.onclick = function() {
 //   }
 // }
 
-for (let i = 0; i <= 10; i++) {
-  for (let j = 0; j <= 10; j++) {
-    var createPara = document.createElement('p');
-    var createText = document.createTextNode(`${i} * ${j} = ${(i * j)}`);
-    createPara.appendChild(createText);
-    divResultado.appendChild(createPara);
-    console.log(createPara)
-  }
+// for (let i = 0; i <= 10; i++) {
+//   for (let j = 0; j <= 10; j++) {
+//     var createPara = document.createElement('p');
+//     var createText = document.createTextNode(`${i} * ${j} = ${(i * j)}`);
+//     createPara.appendChild(createText);
+//     divResultado.appendChild(createPara);
+//     console.log(createPara)
+//   }
+// }
+
+// teste verifica existencia de texto em string
+// var teste = 'Cs é melhor que LOL';
+// var result = teste.includes('melior');
+// console.log(result)
+
+var teste = 'Dota é melhor que LOL';
+var result = teste.indexOf('Dota');
+console.log(result)
+if (result != -1) {
+  console.log('verdadeiro')
+} else {
+  console.log('falso')
 }
+
+var numeroAleat = Math.floor(Math.random() * 100);
+alert(numeroAleat)
