@@ -221,14 +221,18 @@ btnResultado2.onclick = function() {
 // var result = teste.includes('melior');
 // console.log(result)
 
-var teste = 'Dota é melhor que LOL';
-var result = teste.indexOf('Dota');
-console.log(result)
-if (result != -1) {
-  console.log('verdadeiro')
-} else {
-  console.log('falso')
-}
+// var teste = 'Dota é melhor que LOL';
+// var result = teste.indexOf('Dota');
+// console.log(result)
+// if (result != -1) {
+//   console.log('verdadeiro')
+// } else {
+//   console.log('falso')
+// }
 
-var numeroAleat = Math.floor(Math.random() * 100);
-alert(numeroAleat)
+// var numeroAleat = Math.floor(Math.random() * 100);
+// alert(numeroAleat)
+
+var date = new Date();
+console.log(`${date.getDate()}/0${date.getMonth()+1}/${date.getFullYear()}`)
+console.log(`O pŕoximo mês é ${date.getMonth()+2}`)
